@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calcular Salário</title>
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+  <body>
+    <div id="divisoria">
+      <h1>Calcular Salário</h1>
+      <label>Valor da Hora:</label> <br />
+      <input type="text" id="salariohora" onkeypress="return validarNumeros(event)"/> <br /><br />
+
+      <label>Qtde de Hora-Trabalhada:</label> <br />
+      <input type="text" id="horatrabalhada" onkeypress="return validarNumeros(event)" /> <br /><br />
+
+      <label>Vale-transporte</label> <br />
+      <select id="valeT">
+        <option value="Sim">Sim</option>
+        <option value="Não">Não</option>
+      </select>
+      <br /><br />
+
+      <label>Outras Deduções:</label> <br />
+      <input type="text" id="deduzir" onkeypress="return validarNumeros(event)" /> <br />
+
+      <input type="submit" id="botao" onclick="pagamento()" />
+
+      <p id="resultado"></p>
+    </div>
+    <script src="/salario.js"></script>
+    <script src="/validarnumeros.js"></script>
+  </body>
+</html>

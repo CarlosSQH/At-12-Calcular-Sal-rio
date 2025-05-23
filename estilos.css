@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+}
+
+#divisoria{
+    margin-left: 35%;
+    margin-top: 40px;
+    max-height: 700px;
+    width: 30%;
+    padding: 30px;
+    background-color: rgb(247, 247, 247);
+    border: 1px solid;
+    box-shadow: 0px 1px 3px black;
+    font-family: arial;
+}
+
+#divisoria input{
+    width: 85%;
+}
+
+#botao{
+    margin-top: 20px;
+}
+
+@media (max-width: 600px){
+    #divisoria{
+        margin-left: 20%;
+        margin-top: 40px;
+        max-height: 900px;
+        width: 60%;
+        padding: 30px;
+        background-color: rgb(247, 247, 247);
+        border: 1px solid;
+        box-shadow: 0px 1px 3px black;
+        font-family: arial;
+    } 
+
+}
+
+#resultado{
+    font-weight: bold;
+}
