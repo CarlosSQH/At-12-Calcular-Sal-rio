@@ -10,10 +10,10 @@
     <div id="divisoria">
       <h1>Calcular Salário</h1>
       <label>Valor da Hora:</label> <br />
-      <input type="text" id="salariohora" onkeypress="return validarNumeros(event)"/> <br /><br />
+      <input type="text" id="salariohora" value="0.00" onkeypress="return validarNumeros(event)"/> <br /><br />
 
       <label>Qtde de Hora-Trabalhada:</label> <br />
-      <input type="text" id="horatrabalhada" onkeypress="return validarNumeros(event)" /> <br /><br />
+      <input type="text" id="horatrabalhada" value="0.00" onkeypress="return validarNumeros(event)" /> <br /><br />
 
       <label>Vale-transporte</label> <br />
       <select id="valeT">
@@ -23,9 +23,9 @@
       <br /><br />
 
       <label>Outras Deduções:</label> <br />
-      <input type="text" id="deduzir" onkeypress="return validarNumeros(event)" /> <br />
+      <input type="text" id="deduzir"  value="0.00" onkeypress="return validarNumeros(event)" /> <br />
 
-      <input type="submit" id="botao" onclick="pagamento()" />
+      <input type="submit" id="botao"  onclick="pagamento()" />
 
       <p id="resultado"></p>
     </div>
